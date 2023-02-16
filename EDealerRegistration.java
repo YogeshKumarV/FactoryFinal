@@ -67,10 +67,9 @@ public class EDealerRegistration extends TransactionEntity{
     private String dealershipLicense;
     @Column(name = "CORP_NAME")
     private String corporationName;
-    private String codeId;
 
     @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
     @OneToOne(targetEntity = EConfigurationCodes.class, fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-    @JoinColumn(name = "CODE_ID",nullable = false,referencedColumnName = "CODE_ID",columnDefinition = "DEALER_REG_FK1")
-    private EConfigurationCodes ConfigurationCodes;
+    @JoinColumn(name = "CODE_ID",nullable = false,referencedColumnName = "CODE_ID")
+    private EConfigurationCodes codeId;
 }
