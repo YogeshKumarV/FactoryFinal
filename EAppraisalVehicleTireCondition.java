@@ -53,7 +53,7 @@ public class EAppraisalVehicleTireCondition extends TransactionEntity{
     @Column(name = "SPARE_TIRE_ON_VEH")
     private boolean spareTireOnVehicle;
     @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
-    @OneToOne(targetEntity = EConfigurationCodes.class, fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @OneToOne(targetEntity = EAppraisalTestDriveStatus.class, fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     @JoinColumn(name = "VEH_STATUS_ID",nullable = false,referencedColumnName = "VEH_STATUS_ID")
     @Column(name = "VEH_STATUS_ID")
     private EAppraisalTestDriveStatus vehicleStatusId;
