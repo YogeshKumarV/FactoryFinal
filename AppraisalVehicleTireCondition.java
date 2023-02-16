@@ -16,7 +16,7 @@ public class AppraisalVehicleTireCondition extends TransactionEntity {
     private long vehicleTireConditionId;
     @Size(max = 15)
     @NotNull
-    private long appraisalStatusId;
+    private long vehicleStatusId;
     @NotNull
     private boolean tireWidth;
     @NotNull
