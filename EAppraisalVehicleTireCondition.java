@@ -32,8 +32,8 @@ public class EAppraisalVehicleTireCondition extends TransactionEntity{
     @Column(name = "V_TIRE_CONDN_ID")
     private long vehicleTireConditionId;
 
-    @Column(name = "APR_STATUS_ID")
-    private long appraisalStatusId;
+    @Column(name = "VEH_STATUS_ID")
+    private long vehicleStatusId;
     @Column(name = "T_265_OR_70R18")
     private boolean tireWidth;
 
@@ -58,6 +58,6 @@ public class EAppraisalVehicleTireCondition extends TransactionEntity{
     private boolean spareTireOnVehicle;
     @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
     @OneToOne(targetEntity = EConfigurationCodes.class, fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-    @JoinColumn(name = "APR_STATUS_ID",nullable = false,referencedColumnName = "APR_STATUS_ID")
+    @JoinColumn(name = "APR_STATUS_ID",nullable = false,referencedColumnName = "VEH_STATUS_ID")
     private EAppraisalTestDriveStatus appraisalTestDriveStatus;
 }
