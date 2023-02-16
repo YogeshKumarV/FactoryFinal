@@ -31,12 +31,8 @@ public class EAppraisalVehicleTireCondition extends TransactionEntity{
     @SequenceGenerator(name = "APR_VEH_TIRE_CONDN_SEQ", sequenceName = "APR_VEH_TIRE_CONDN_SEQ")
     @Column(name = "V_TIRE_CONDN_ID")
     private long vehicleTireConditionId;
-
-    @Column(name = "VEH_STATUS_ID")
-    private long vehicleStatusId;
     @Column(name = "T_265_OR_70R18")
     private boolean tireWidth;
-
     private boolean fourMatch;
     private boolean mismatched;
     @Column(name = "XLNT_TREAD")
@@ -59,5 +55,6 @@ public class EAppraisalVehicleTireCondition extends TransactionEntity{
     @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
     @OneToOne(targetEntity = EConfigurationCodes.class, fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     @JoinColumn(name = "VEH_STATUS_ID",nullable = false,referencedColumnName = "VEH_STATUS_ID")
-    private EAppraisalTestDriveStatus appraisalTestDriveStatus;
+    @Column(name = "VEH_STATUS_ID")
+    private EAppraisalTestDriveStatus vehicleStatusId;
 }
