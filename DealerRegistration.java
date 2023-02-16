@@ -85,8 +85,6 @@ public class DealerRegistration extends TransactionEntity {
     @Size(max = 30)
     @NotNull
     private String corporationName;
-    @Size(max = 30)
-    private String codeId;
-    private ConfigurationCodes configurationCodes;
+    private ConfigurationCodes codeId;
 
 }
