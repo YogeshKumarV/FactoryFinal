@@ -24,5 +24,5 @@ public class ConfigurationCodes extends TransactionEntity {
     @Size(max = 50)
     @NotNull
     private String shortDescription;
-    private EDealerRegistration dealerRegistration;
+    private DealerRegistration dealerRegistration;
 }
