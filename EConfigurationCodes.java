@@ -34,5 +34,8 @@ public class EConfigurationCodes extends TransactionEntity{
     private String shortCode;
     private String longCode;
     private String shortDescription;
+    @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
+    @OneToOne(mappedBy="codeId")
+    private EDealerRegistration dealerRegistration;
 
 }
