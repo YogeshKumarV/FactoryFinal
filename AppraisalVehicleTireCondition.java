@@ -14,9 +14,6 @@ import javax.validation.constraints.Size;
 public class AppraisalVehicleTireCondition extends TransactionEntity {
     @Size(max = 15)
     private long vehicleTireConditionId;
-    @Size(max = 15)
-    @NotNull
-    private long vehicleStatusId;
     @NotNull
     private boolean tireWidth;
     @NotNull
@@ -41,5 +38,5 @@ public class AppraisalVehicleTireCondition extends TransactionEntity {
     private boolean noSpareTire;
     @NotNull
     private boolean spareTireOnVehicle;
-    private AppraisalTestDriveStatus appraisalTestDriveStatus;
+    private AppraisalTestDriveStatus vehicleStatusId;
 }
