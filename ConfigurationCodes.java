@@ -1,4 +1,5 @@
 package com.factory.appraisal.vehiclesearchapp.dto;
+// authorName : YogeshKumarV
 
 import com.factory.appraisal.vehiclesearchapp.persistence.model.TransactionEntity;
 import lombok.AllArgsConstructor;
@@ -12,6 +13,7 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ConfigurationCodes extends TransactionEntity {
+    private long codeId;
     @Size(max = 15)
     @NotNull
     private String codeType;
