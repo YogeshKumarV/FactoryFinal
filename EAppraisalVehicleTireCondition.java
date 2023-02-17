@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Audited
 @AuditTable(value = "APR_VEH_TIRE_CONDN_AUD", schema = "FACTORY_AUD")
 @Entity
-@Table(name = "FACTORY_DB.APR_VEH_TIRE_CONDN",schema = "FACTORY_DB")
+@Table(name = "APR_VEH_TIRE_CONDN",schema = "FACTORY_DB")
 @DynamicUpdate
 @DynamicInsert
 @Getter
