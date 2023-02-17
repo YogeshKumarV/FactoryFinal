@@ -13,6 +13,7 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DealerRegistration extends TransactionEntity {
+    private  long dealerId;
     @Size(max = 30)
     @NotNull
     private String name;
