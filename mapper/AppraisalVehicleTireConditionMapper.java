@@ -1,4 +1,5 @@
 package com.factory.appraisal.vehiclesearchapp.mapper;
+// authorName : YogeshKumarV
 
 import com.factory.appraisal.vehiclesearchapp.dto.AppraisalVehicleTireCondition;
 import com.factory.appraisal.vehiclesearchapp.persistence.model.EAppraisalVehicleTireCondition;
