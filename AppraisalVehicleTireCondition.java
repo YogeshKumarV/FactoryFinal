@@ -1,4 +1,5 @@
 package com.factory.appraisal.vehiclesearchapp.dto;
+// authorName : YogeshKumarV
 
 import com.factory.appraisal.vehiclesearchapp.persistence.model.TransactionEntity;
 import lombok.*;
@@ -12,7 +13,6 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AppraisalVehicleTireCondition extends TransactionEntity {
-    @Size(max = 15)
     private long vehicleTireConditionId;
     @NotNull
     private boolean tireWidth;
