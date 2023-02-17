@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Audited
 @AuditTable(value = "CONFIG_CODES_AUD",schema = "FACTORY_AUD")
 @Entity
-@Table(name = "FACTORY_DB.CONFIG_CODES",schema = "FACTORY_DB")
+@Table(name = "CONFIG_CODES",schema = "FACTORY_DB")
 @DynamicUpdate
 @DynamicInsert
 @Getter
